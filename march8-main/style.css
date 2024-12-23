@@ -1,0 +1,479 @@
+  @import url(https://myfonts.ru/myfonts?fonts=evolventa);
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Evolventa', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+img{      
+    max-width: 100%;
+}
+.wrapper{
+    background: #C5DEFE;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+header{
+    padding: 50px 0;
+}
+header .logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+}
+header nav{
+    float: right;
+    width: 50%;
+}
+header nav ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 400;
+    z-index: 2;
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a{
+    color: #fff;
+}
+header nav ul li.active::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #dc7000;
+    border-radius: 10px;
+    position: relative;
+    top: 5px;
+    left: -15px;
+
+}
+header nav ul li:not(.active):not(.btn) a:hover{
+    border-bottom: 5px solid #dc7000;
+}
+header nav ul li.btn a{
+    background: #000000;
+    padding: 9px 16px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+header nav ul li.btn a:hover{
+    background:#a02604 ;
+}
+.hero{
+    padding-bottom: 100px;
+    position: relative;
+    top: 150px  ;
+    z-index: 1;
+}
+.hero--info{
+    width: 575px    ;
+    padding-top: 70px;
+}
+.hero--info h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    color: #000000;
+}
+.blinking-text{
+    font-size: 60px;
+    color: #000000;
+    animation: blink 3s infinite; 
+}
+@keyframes blink {
+    0% {
+      text-shadow: 0 0 10px #6C63FF,
+                   0 0 20px #6C63FF,
+                   0 0 40px #6C63FF;
+    }
+    50% {
+      text-shadow: 0 0 2px #6C63FF,
+                   0 0 5px #6C63FF,
+                   0 0 10px #6C63FF;
+    }
+    100% {
+      text-shadow: 0 0 10px #6C63FF,
+                   0 0 20px #6C63FF,
+                   0 0 40px #6C63FF;
+    }
+  } 
+
+.hero--info .btn{
+    background: #6C63FF;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 20px 50px;
+    border: none;
+    transition: all 500ms ease;
+    position: relative;
+    top: 10px;
+}
+.hero--info .btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.btntwo{
+    background: #6C63FF;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 15px 55px;
+    border: none;
+    font-weight: 400;
+    transition: all 500ms ease;
+    position: relative;
+    top: 30px;
+}
+.btntwo:hover{
+    cursor: pointer;
+    
+}
+
+.hero img{
+    position: absolute;
+    top: -80px;
+    right: 0;
+}
+/* 3 Карточки */
+.carousel{
+    padding-top:30rem
+}
+.carousel h3{
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 2rem auto;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-container.no-transition {
+  transition: none; /* Отключение анимации для мгновенного перехода */
+}
+
+.carousel-item {
+  flex: 0 0 600px;
+  height: 200px;
+  background: linear-gradient(135deg, #AACEFE, #6C63FF);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #6C63FF;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn:hover {
+  background: #4A5C9D;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+
+
+.whyus {
+    padding-top: 5rem;
+    border-radius: 20px;
+    text-align: center; 
+    margin-bottom: 300px;
+    margin-top: 100px;
+  }
+  
+  .whyus h2 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .bbline {
+    width:250px;
+    height: 10px;
+    background: linear-gradient(#A6C1EE, #4A5C9D);
+    margin: 0 auto 30px auto;
+    border-radius: 5px;
+  }
+  
+  .whyus--content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
+  
+  .whyvid video {
+    position: relative;
+    bottom: 20px;
+    width: 500px;
+    max-width: 100%;
+    border-radius: 20px;
+    left: 100px;
+  }
+  
+  .exp {
+    position: relative;
+    max-width: 500px;
+    text-align: left;
+    top: -30px;
+    right: 100px;
+  }
+  
+  .exp h3 {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+  .palkawhy{
+    position: relative;
+    top: 45px;
+    right: 15px;
+  }
+  
+  .exp p {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #000000;
+  }
+
+ .res {
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.res h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 80px;
+  color: #000000;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Убираем фиксированные отступы, добавляем равномерные пробелы */
+  width: 100%;
+}
+
+.card {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #AACEFE;
+  opacity: 0.8; /* исправляем синтаксис */
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none; /* убираем подчеркивание для ссылок */
+}
+
+.card h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.feedback {
+    position: relative;
+    bottom: 100px;
+    background-color: #AACEFE;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    margin-top: 250px;
+    padding: 152px 53px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+  }
+
+  .fb-text {
+    max-width: 50%;
+  }
+
+  .fb-text h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+
+  .fb-text p {
+    font-size: 25px;
+    font-weight: 400;
+    max-width: 500px;
+    padding-top: 30px;
+    text-align: left;
+  }
+
+  .fb-form {
+    max-width: 50%;
+    width: 100%;
+  }
+
+  .fb-form .nameinput {
+    color: #fff;
+    border-radius: 20px;
+    background: transparent ;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+    width: 100%;
+    height: 50px;
+    max-width: 570px;
+    font-size: 30px;
+    padding: 10px 0 10px 15px;
+  }
+  .fb-form .emailinput{
+    position: absolute;
+    color: #fff;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+    width: 260px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 10px 0 10px 15px;
+    margin-left: 30px;
+  } 
+  .fb-form .telinput{
+    position: relative;
+    color: #fff;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+    width: 260px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 10px 0 10px 15px;
+  }
+  .fb-form .nameinput::placeholder{
+    color: #ffffff;
+    opacity: 80%;
+    font-size: 30px;    
+  }
+  .fb-form input::placeholder {
+    opacity: 80%;
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .fb-form button {
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    border: none;
+    display: flex;
+    margin-top: 45px;
+    left: 140px;
+    width: 300px;
+    height: 76px;
+    padding: 22px 86px;
+    justify-content: center;
+    align-items: center;    
+    color: #000000;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+  }
+
+
+
+footer{
+  padding-top: 100px;
+  color: #000000;
+}
+footer .blocks{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+footer .blocks p{
+  width: 300px;
+  margin: 15px 0;
+}
+footer .blocks h4{
+  border-bottom: 1px solid gray;
+  font-size: 20px;
+  font-weight: 400;
+}
+footer .blocks ul{
+  list-style: none;
+  margin-top: 15px;
+}
+footer .blocks ul li{
+  margin: 10px 0;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#000000, #1A0E01);
+}
